@@ -44,6 +44,7 @@ main{
     display: flex;
     padding: 1rem;
     flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .foto{
@@ -72,7 +73,7 @@ main{
 .valores{
     display: flex;
     justify-content: space-between;
-    margin:0
+    margin: 0 0 10px;
 }
 
 .valor{
@@ -113,7 +114,46 @@ main{
 }
 
 .autor{
-    margin-top: 1rem;
+    display: flex;
+    border-top: 2px solid hsl(215, 32%, 27%);
+    padding-top: 1rem;
+}
+
+.profile{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(/images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.autor p{
+    color: var(--soft--blue);
+    margin: 5px 0 0 10px;
+}
+
+.autor span{
+    font-weight: 600;
+}
+
+/*Active-states*/
+
+.foto:hover{
+    background-image: url(/images/icon-view.svg);
+    background-color: var(--cyan);
+    
+}
+
+.datos h1:hover{
+    color: var(--cyan);
+} 
+
+.autor span:hover{
+    color: var(--cyan);
 }
 
 
